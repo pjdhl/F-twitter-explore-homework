@@ -1,4 +1,16 @@
+@import "variables";
+
 @mixin heading($font-size) {
   margin-top: 0;
   font-size: $font-size;
+}
+
+@mixin border($color) {
+  border: 1px solid $color;
+}
+
+@mixin hover {
+  background-color: $primary-color;
+  color: $white;
+  cursor: pointer;
 }

@@ -1,3 +1,80 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+header {
+  color: $white;
+  font-size: $font-size-base;
+  padding: $padding-base-lg $padding-base-xl;
+  display: flex;
+  justify-content: space-between;
+  .title {
+    font-size: $font-size-base * 2.5;
+    font-weight: $font-weight-xl;
+  }
+  .button {
+    width: 125px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: $border-radius-base * 3.1;
+    margin-top: $space-sl * 0.3;
+    display: inline-block;
+    text-align: center;
+
+    font-size: $font-size-base * 1.25;
+    color: $primary-color;
+    @include border($primary-color);
+    &:hover {
+      @include hover;
+    }
+  }
+}
+.hr {
+  @include border($border-color);
+}
+
+.form {
+  width: 444px;
+  height: 516px;
+  @include border($border-color);
+  margin: $space-xl * 3 auto;
+  border-radius: $border-radius-base;
+  .title {
+    color: $white;
+    font-size: $font-size-base * 1.5;
+    font-weight: $font-weight-xl;
+    margin: $space-base auto 0px;
+    text-align: center;
+  }
+  form {
+    margin: $space-sl $space-xl;
+    font-size: $font-size-base * 1.25;
+    div {
+      margin-top: $space-base * 0.5;
+    }
+    input {
+      border-bottom: 1px solid $border-color;
+      width: 340px;
+      color: $white;
+      font-size: $font-size-base * 1.25;
+    }
+    .forget-password {
+      color: $primary-color;
+      font-size: $font-size-base * 1.25;
+    }
+    p {
+      text-align: center;
+    }
+    .login,
+    .register {
+      @include border($primary-color);
+      border-radius: $border-radius-base * 3.1;
+      text-align: center;
+      height: 43px;
+      line-height: 43px;
+      &:hover {
+        @include hover;
+      }
+    }
+  }
+}

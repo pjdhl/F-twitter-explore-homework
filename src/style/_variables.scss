@@ -16,3 +16,14 @@ $heading-color: $white !default;
 $link-color: $gray !default;
 $link-hover-color: darken($link-color, 15%) !default;
 $border-color: rgb(61, 84, 102);
+
+$padding-base: 1rem;
+$padding-base-lg: $padding-base * 1.25;
+$padding-base-xl: $padding-base * 2.5;
+
+$font-weight-base: 500;
+$font-weight-xl: 700;
+
+$space-sl: 30px;
+$space-base: 40px;
+$space-xl: 50px;
