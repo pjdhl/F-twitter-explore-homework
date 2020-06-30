@@ -8,11 +8,14 @@ header {
   padding: $padding-base-lg $padding-base-xl;
   display: flex;
   justify-content: space-between;
+
   .title {
     font-size: $font-size-base * 2.5;
     font-weight: $font-weight-xl;
   }
+
   .button {
+    @include border($primary-color);
     width: 125px;
     height: 43px;
     line-height: 43px;
@@ -20,10 +23,9 @@ header {
     margin-top: $space-sl * 0.3;
     display: inline-block;
     text-align: center;
-
     font-size: $font-size-base * 1.25;
     color: $primary-color;
-    @include border($primary-color);
+
     &:hover {
       @include hover;
     }
@@ -34,11 +36,11 @@ header {
 }
 
 .form {
-  width: 444px;
-  height: 516px;
   @include border($border-color);
+  width: 444px;
   margin: $space-xl * 3 auto;
   border-radius: $border-radius-base;
+
   .title {
     color: $white;
     font-size: $font-size-base * 1.5;
@@ -46,25 +48,32 @@ header {
     margin: $space-base auto 0px;
     text-align: center;
   }
+
   form {
     margin: $space-sl $space-xl;
     font-size: $font-size-base * 1.25;
-    div {
-      margin-top: $space-base * 0.5;
-    }
+
     input {
       border-bottom: 1px solid $border-color;
       width: 340px;
       color: $white;
       font-size: $font-size-base * 1.25;
+      margin-bottom: $space-base * 0.5;
     }
+
     .forget-password {
       color: $primary-color;
       font-size: $font-size-base * 1.25;
     }
+
     p {
       text-align: center;
     }
+
+    .login {
+      margin-top: $space-base * 0.5;
+    }
+
     .login,
     .register {
       @include border($primary-color);
@@ -72,6 +81,9 @@ header {
       text-align: center;
       height: 43px;
       line-height: 43px;
+      width: 340px;
+      color: $primary-color;
+
       &:hover {
         @include hover;
       }
